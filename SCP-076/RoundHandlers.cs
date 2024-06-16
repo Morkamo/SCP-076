@@ -14,7 +14,7 @@ namespace SCP_076
     {
         public void OnRoundStarted()
         {
-            if (Player.Dictionary.Count >= Plugin.Instance.Config.MinPlayerForSpawn && Round.SurvivingSCPs >= Plugin.Instance.Config.MinScpUnits && 
+            if (Player.Dictionary.Count >= Plugin.Instance.Config.MinPlayersForSpawn && Round.SurvivingSCPs >= Plugin.Instance.Config.MinScpUnits && 
                         Random.Range(1, 101) <= Plugin.Instance.Config.SpawnChance)
                     CustomRole.Get(typeof(role076))?.AddRole(Player.Get(player => player.IsScp).GetRandomValue());
         }

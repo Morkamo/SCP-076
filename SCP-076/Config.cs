@@ -32,7 +32,7 @@ namespace SCP_076
         public float SpawnChance { get; set; } = 100f;
 
         [Description("Указывает требуемое минимальное количество игроков на сервере для автоспавна")]
-        public uint MinPlayerForSpawn { get; set; } = 10;
+        public uint MinPlayersForSpawn { get; set; } = 10;
         
         [Description("Минимальное количество живых SCP в раунде")]
         public byte MinScpUnits { get; set; } = 5;
